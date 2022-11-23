@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block y %}
+
+<h1> LOGIN </h1>
+
+<form action="/login" method="POST">
+	{% if message %}
+  		<h4>{{ message }}</h4>
+  	{% endif %}
+	<input placeholder="Name" autocomplete="off" type="text" name="username">
+	<input placeholder="Pass" autocomplete="off" type="text" name="password">
+	<input type="submit" name="Login">
+	<p>You don't have an account? <a href="/register">Register</a>.</p>
+</form>
+
+{% endblock %}
