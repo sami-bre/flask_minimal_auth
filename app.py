@@ -81,4 +81,4 @@ def logout():
 
 
 # finally, start the server
-app.run(debug=True)
+app.run(port=10000)
